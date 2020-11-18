@@ -1,71 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 40px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<title>首页</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/compatible.js"></script>
+    <style>
+        body,html{
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-	<script>
-       	window.onload = window.onresize = function(){
-        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
-				var _html = document.getElementsByTagName('html')[0];
-        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
-       	 }
-</script>
-<!-- 搜索 -->
-<div class="i-search">
-	<p class="p1">保定<img src="images/xl.png" alt=""></p>
-	<div class="p2">
-		<img src="images/sousuo.png" alt="">
-		<input type="text" value="在千万服务中搜索">
-	</div>
-</div>
-<!-- 轮播图 -->
-<div style="padding: 0 0.6rem;box-sizing:border-box;height:7rem;">
-	<div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/banner.jpg" alt="">
-            </div>
-            <div class="swiper-slide"><img src="images/banner.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/banner.jpg" alt=""></div>
+<!-- 登录页 -->
+    <div class="lzxw-phone-login">
+        <!-- 登录页背景 -->
+        <div class="lzxw-phone-login-back">
+            <img src="images/p-login.jpg" alt="">
         </div>
-  	</div>
-</div>
-
- <script src="js/swiper.min.js"></script>
-    <script type="text/javascript">
-    window.onload = function() {
-      var mySwiper = new Swiper ('.swiper-container', {
-        // 轮播图的方向，也可以是vertical方向
-        direction:'horizontal',
-        
-        //播放速度
-        loop: true,
-
-        // 自动播放时间
-        autoplay:1000,
-
-        // 播放的速度
-        speed:2000,
-        
-        // // 如果需要分页器，即下面的小圆点
-        // pagination: '.swiper-pagination',
-        
-        // // 如果需要前进后退按钮
-        // nextButton: '.swiper-button-next',
-        // prevButton: '.swiper-button-prev',
-　　　　　
-
-　　　　　　// 这样，即使我们滑动之后， 定时器也不会被清除
-　　　　  autoplayDisableOnInteraction : false,
-        
-        // 如果需要滚动条
-        scrollbar: '.swiper-scrollbar',
-      });
-    }        
-    </script>
+        <!-- 登录信息 -->
+        <div class="lzxw-phone-login-information">
+            <!-- 姓名 -->
+            <div class="lzxw-phone-login-i-name">
+                <img src="images/name.png" alt="">
+                <input type="text" placeholder="" autofocus>
+            </div>
+            <!-- 电话 -->
+            <div class="lzxw-phone-login-i-phone">
+                <img src="images/phone.png" alt="">
+                <input type="text" placeholder="" autofocus>
+            </div>
+            <!-- 登录按钮 -->
+            <form>
+                <button class="lzxw-phone-login-i-button"><a href="p-answer.html">登录</a></button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
