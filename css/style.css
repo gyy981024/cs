@@ -12,7 +12,7 @@ body{
 /* 登录页背景 */
 .lzxw-phone-login .lzxw-phone-login-back{
     width: 100%;
-    height: 10rem;
+    height: 100%;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -330,7 +330,16 @@ body{
         box-sizing: border-box;
     }
 }
-
+@media only screen and (max-height:550px){
+    .lzxw-phone-login .lzxw-phone-login-back{
+        height: 10rem;
+    }
+    .lzxw-phone-login .lzxw-phone-login-back img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 .showmsg{font-size: 0.42rem;line-height: 0.75rem;text-align: center;margin-top:0.20rem;margin-bottom:0.20rem;}
 .showmsg img{margin:auto auto;margin-bottom:0.20rem;margin-top:0.30rem;text-align:center;display:block;}
 .cheng{ min-height:350px; padding-top:40px; line-height:40px; text-align:center; font-size: 0.42rem;line-height: 0.65rem;text-align: center;}
