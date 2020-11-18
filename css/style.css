@@ -6,7 +6,7 @@ body{
     width: 100%;
     height: 100%;
     position: relative;
-    padding-top:3rem;
+    padding-top:2.2rem;
     box-sizing: border-box;
 }
 /* 登录页背景 */
@@ -25,7 +25,7 @@ body{
     width: 6.6rem;
     height: 2.5rem;
     margin: 0 auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 .lzxw-phone-login .lzxw-phone-word img{
     width: 100%;
